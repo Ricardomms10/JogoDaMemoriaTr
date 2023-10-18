@@ -1,0 +1,106 @@
+.contender {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 10px;
+    padding: 1rem;
+    font-family: 'Patua One', serif;
+    letter-spacing: 0.2rem;
+    color: #fa8328;
+}
+
+.boxMoves {
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Patua One', serif;
+    letter-spacing: 0.1rem;
+    color: #fa8328;
+    flex: 2;
+}
+
+.boxImg {
+    position: relative;
+    width: 100px;
+    height: auto;
+}
+
+.tigre {
+    width: 100%;
+    height: auto;
+}
+
+.moves-container,
+.matches-container {
+    padding: 10px;
+
+}
+
+.BtnReset {
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #fa8328;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.4rem;
+    background-color: #FFF;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.1rem;
+    text-align: center;
+    z-index: 1000;
+   
+}
+
+.close-button {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #fa8328;
+    color: white;
+    font-weight: bold;  
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
